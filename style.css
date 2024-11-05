@@ -1,0 +1,285 @@
+:root {
+    --azul-principal: #022046;
+    --branco-principal: #FFFFFF;
+    --cor-de-fundo: #cbcbcb;
+    --cor-de-fundo-secundario: #EFEFEF;
+}
+
+body {
+    margin: 0px;
+    background-color: white;
+    margin-bottom: 100px;
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+   
+    font-size: 32px;
+    color: white;
+}
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.advocacia-image {
+    margin: 30px;
+}
+  
+
+.container {
+    height: 50vh;
+    display: grid;
+    
+}
+
+.container_caixa {
+    
+    color: var(--branco-principal);
+    font: normal 35px / 45px "Roboto Condensed", Helvetica, Arial, Verdana, sans-serif;
+    letter-spacing: 4px;
+    margin-right: 10%;
+    margin: 30px;
+}
+
+.container__titulo {
+    font-size: 48px;
+    line-height: 55px;
+    color: var(--azul-principal);
+    text-transform: uppercase;
+}
+
+.container__subtitulo {
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--azul-principal);
+    text-transform: none;
+}
+
+.contato {
+    line-height: 100px;
+    font-size: 21px;
+    display: block;
+    text-align: center;
+    margin: 0em 3em;
+   
+   
+    left: 60%;
+    cursor: pointer;
+}
+
+.container_principal {
+    background: var(--cor-de-fundo-secundario);
+    padding-bottom: 85px;
+    padding-top: 86px;
+    display: flex;
+    justify-content: center;
+}
+
+.container__aviso {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--azul-principal);
+}
+
+.lista__link {
+    text-decoration: none;
+    color: var(--azul-principal);
+    margin-left: 7em;
+    cursor: pointer;
+    padding: 20px 10px;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.mini-widgets {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #022046;
+    font-size: 25px;
+    margin: 0;
+} 
+
+.lista__link a {
+    text-decoration: none;
+    color: white; 
+}
+
+
+.logo {
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.logo img {
+    width: 400px;
+    height: 160px;
+}
+
+.container_caixa-2 {
+    text-align: center;
+    border-top: solid 2px var(--azul-principal);
+    border-bottom: solid 2px var(--azul-principal);
+    background-color: var(--azul-principal);
+}
+
+.titulo__especialidades {
+    color: var(--branco-principal);
+}
+
+.frases-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px; 
+    margin: 30px; 
+    margin-bottom: 20px;
+}
+
+.frase {
+    padding: 10px; 
+    box-sizing: border-box;
+    font-size: 23px;
+    color: var(--azul-principal)
+}
+
+.frase i {
+    font-size: 50px; 
+    margin-right: 5px; 
+    vertical-align: middle;  
+    color: var(--azul-principal)
+}
+
+.container_terciario {
+    letter-spacing: 4px;
+    
+    margin: 0;
+    
+    
+    display: flex;
+    justify-content: center;
+    background: var(--cor-de-fundo-secundario);
+    width: 100%;
+    padding: 85px 0;
+    align-items: center;
+}
+
+.container_caixa-3 {
+    margin-right: 10%;
+    margin: 30px;
+    font-size: 27px;
+}
+
+.container__nos {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.reinaldo-image {
+    max-width: 100%;
+    transition: opacity 0.5s ease;
+    width: auto;
+    opacity: 1;
+    object-fit: contain;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .logo img {
+        width: 300px;
+        height: auto; 
+    }
+
+    .mini-widgets {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .lista__link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container_principal {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .container_caixa {
+        margin: 0;
+        text-align: center;
+    }
+
+    .advocacia-image {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 250px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .container__titulo {
+        font-size: 36px;
+    }
+
+    .container__subtitulo {
+        font-size: 14px;
+    }
+
+    .container__aviso {
+        font-size: 16px;
+    }
+
+    .container_secundario {
+        padding: 20px 0;
+    }
+}
